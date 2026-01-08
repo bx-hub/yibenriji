@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f6f6;
+}
+
+/* 顶部栏 */
+.top-bar {
+  height: 56px;
+  background: #3bb3bd;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.top-bar .left,
+.top-bar .right {
+  width: 40px;
+  text-align: center;
+}
+
+.top-bar .center {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* 时间轴 */
+#timeline {
+  padding: 12px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+  cursor: pointer;
+}
+
+.card .summary {
+  color: #333;
+  line-height: 1.4;
+  max-height: 4.2em;
+  overflow: hidden;
+}
+
+/* FAB */
+.fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #3bb3bd;
+  color: white;
+  font-size: 24px;
+  border: none;
+}
+
+/* 编辑页 */
+.editor {
+  padding: 16px;
+}
+
+.editor-content {
+  min-height: 70vh;
+  outline: none;
+  font-size: 16px;
+}
+
+.editor-toolbar {
+  height: 48px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  padding: 0 12px;
+}

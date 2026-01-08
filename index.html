@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>一本日记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="top-bar">
+  <div class="left">☰</div>
+  <div class="center" id="todayBtn">1月8日 ▾</div>
+  <div class="right">🔍</div>
+</header>
+
+<main id="timeline"></main>
+
+<button class="fab" id="addBtn">✍</button>
+
+<script src="js/db.js"></script>
+<script src="js/list.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js')
+    .then(() => console.log('SW registered'))
+    .catch(err => console.error('SW error', err));
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>写日记</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="top-bar">
+  <div class="left" id="backBtn">✕</div>
+  <div class="center" id="dateText"></div>
+  <div class="right">⋮</div>
+</header>
+
+<main class="editor">
+  <div id="content" contenteditable="true" class="editor-content" placeholder="记录今日..."></div>
+</main>
+
+<footer class="editor-toolbar">
+  <button id="imgBtn">🖼</button>
+</footer>
+
+<input type="file" id="imgInput" accept="image/*" hidden />
+
+<script src="js/db.js"></script>
+<script src="js/editor.js"></script>
+</body>
+</html>
